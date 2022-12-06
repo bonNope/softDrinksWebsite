@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>главная</title>
+</head>
+
+<body>
+	<table border="0" width="900" cellpadding="0" cellspacing="0" align="center" bgcolor="#fb593a">
+		<tr>
+			<td width="150" align="center"><img style="width:150px" th:src="@{/images/logo2.svg}" alt=""></td>
+			<td align="center">
+				<H1>РОСИНКА</H1>
+			</td>
+			<td width="200">
+				<table cellpadding="5" width="100%">
+					<tr>
+						<!-- <td width="40%" align="right">�����: </td> -->
+						<td align="right"><input type="text" value="логин"></td>
+					</tr>
+					<tr>
+						<!-- <td width="40%" align="right">������: </td> -->
+						<td align="right"><input type="password" value="пароль"></td>
+					</tr>
+					<tr>
+						<!-- 			<td width="40%" align="right"><A HREF="#">�����������</A></td> -->
+						<td align="right"><input type="submit" value="войти"></td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+
+	<table border="0" width="900" cellpadding="5" align="center">
+		<tr>
+			<td align="center"><a href="/products/index">главная</a></td>
+			<td align="center"><a href="/products/goods">каталог</a></td>
+			<td align="center"><a href="/products/contacts">контакты</a></td>
+
+			<form th:method="POST" th:action="@{/products/search}">
+				<td align="right"><input type="text" id="query" name="query">
+
+					<button type="submit">поиск</button></td>
+			</form>
+		</tr>
+	</table>
+	<BR>
+	<table border="0" width="900" cellpadding="5"  align="center">
+		<tr>
+			<td width="150" height="300" valign="top" align="center" bgcolor="#f78fa7">
+				<a href="/products/about_us">о нас</a><BR><BR>
+				<a href="/products/history">история фирмы</a><BR><BR>
+				<a href="/products/employeers">сотрудники</a><BR><BR>
+
+			</td>
+			<td>
+				<H1 align="center">компания РОСИНКА!</H1>
+				<p>
+
+						<img style="width:350px" th:src="@{/images/aboba2.png}" align="right" alt="">
+					Все напитки «Компании Росинка» - это беспрецедентный уровень чистоты производства без использования
+					консервантов.<BR>
+
+					немного о нас:<BR>
+
+					Мы делаем полезные и безопасные напитки, в которых сохранены
+					свойства растительных ингредиентов, натуральных экстрактов и
+					ароматизаторов. Для производства мы используем только чистейшую питьевую или
+					минеральную воду.<BR>
+
+					<span style="color:red">АО « Компания Росинка» работает по
+						принципу технологии полного «чистого производства» – он включает в себя
+						как чистоту розлива и производства, так и чистоту самого напитка от химических
+						составляющих, добавок и консервантов. Асептические и ультраклин стерильные линии
+						производства и розлива, позволяют производить безопасные и полезные напитки с
+						сохранением всех свойств растительных ингредиентов и натуральных экстрактов..</span><BR>
+					<BR>
+				<H1>ЛУЧШИЕ ПРЕДЛОЖЕНИЯ</H1>
+				<table border="2" cellpadding="20" cellspacing="5">
+
+					<tr>
+						<td>НОВЫЕ ПРЕДЛОЖЕНИЯ</td>
+						<td>2 упаковки фрутотива по цене одной <span style="color:red">скорее!</span></td>
+					</tr>
+					<tr>
+						<td>новые вкус с апельсином!</td>
+						<td>новая упаковка <span style="color:green">25%</span> напитка бесплатно! </td>
+					</tr>
+					<tr>
+						<td>Каждый второй энергетик STORM бесплатно</td>
+						<td>Самый бодрящий напиток в России</td>
+					</tr>
+				</table><BR>
+				<H1 align="center">
+						ВАШИ ВКУСОВЫЕ РЕЦЕПТОРЫ БУДУТ НА ВЫСОТЕ</H1>
+
+
+
+			</td>
+
+		</tr>
+
+	</table>
+	<hr>
+	все права защищены
+
+</body>
+
+</html>

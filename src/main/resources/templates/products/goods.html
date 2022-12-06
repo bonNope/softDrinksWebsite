@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<title>товары</title>
+</head>
+
+<body>
+	<table border="0" width="900" cellpadding="0" cellspacing="0" align="center" bgcolor="#fb593a">
+		<tr>
+			<td width="150" align="center"><img style="width:150px" th:src="@{/images/logo2.svg}"></td>
+			<td align="center">
+				<H1>РОСИНКА</H1>
+			</td>
+			<td width="200">
+				<table cellpadding="5" width="100%">
+					<tr>
+						<!-- <td width="40%" align="right">�����: </td> -->
+						<td align="right"><input type="text" value="логин"></td>
+					</tr>
+					<tr>
+						<!-- <td width="40%" align="right">������: </td> -->
+						<td align="right"><input type="password" value="пароль"></td>
+					</tr>
+					<tr>
+						<!-- 			<td width="40%" align="right"><A HREF="#">�����������</A></td> -->
+						<td align="right"><input type="submit" value="войти"></td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+
+	<table border="0" width="900" cellpadding="5" align="center">
+		<tr>
+			<td align="center"><a href="/products/index">главная</a></td>
+			<td align="center"><a href="/products/goods">каталог</a></td>
+			<td align="center"><a href="/products/contacts">контакты</a></td>
+
+			<form th:method="POST" th:action="@{/products/search}">
+				<td align="right"><input type="text" id="query" name="query">
+
+				<button type="submit">поиск</button></td>
+			</form>
+		</tr>
+	</table>
+	<BR>
+	<table th:height="800" border="0" width="900" cellpadding="5" align="center">
+		<tr>
+			<td width="150" height="300" valign="top" align="center" bgcolor="#f78fa7">
+				<a href="/products/about_us">о нас</a></a><BR><BR>
+				<a href="/products/history">история фирмы</a></a><BR><BR>
+				<a href="/products/employeers">сотрудники</a></a><BR><BR>
+
+			</td>
+			<td>
+				<H1 align="center">компания РОСИНКА!</H1>
+				<p></p>
+				<H1 align="center">
+					<span style="color:green"> Каталог напитков компании</span>
+					<br>
+					Лучшие напитки всего мира</H1>
+
+				<div th:each="good : ${goods}" border="0" width="700" cellpadding="0" cellspacing="0" align="center" bgcolor="#fb593a">
+
+					<h1><a th:href="@{/products/{id}(id=${good.getId()})}" th:text="${good.getName()}">name</a></h1>
+				<img style="width:300px" th:src="@{{img}(img=${good.getUrl()})}" alt="">
+
+
+
+				<a th:text="${good.getShortDescription()}">short description</a>
+				<hr>
+				</div>
+
+
+
+			</td>
+		</tr>
+	</table>
+
+
+
+
+
+
+
+	<hr>
+	все права защищены
+
+</body>
+
+</html>

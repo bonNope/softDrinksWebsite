@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <title>главная</title>
+</head>
+
+<body>
+    <style>
+    .kadupis-decung{
+        margin-top: 50px;
+      }
+      
+      .kadupis-decung h1{
+        font-family: 'Allura', cursive;
+        font-size: 52px;
+        margin-bottom: 60px;
+        text-align: center;
+      }
+      
+      .cumconevu{
+        display: flex;
+        justify-content: center;
+        width: auto;
+        text-align: center;
+        flex-wrap: wrap;
+      }
+      
+      .cumconevu .volupavum {
+        background: #fdfafa;
+        margin: 4px;
+        margin-bottom: 50px;
+        width: 315px;
+        padding: 18px;
+        line-height: 20px;
+        color: #888dad;
+        position: relative;
+      }
+      
+      .cumconevu .volupavum h3{
+        color: #81c644;
+        font-size: 26px;
+        margin-top: 50px;
+      }
+      
+      .cumconevu .volupavum p.role {
+        color: #676363;
+        margin: 10px 0;
+        font-size: 13px;
+        text-transform: uppercase;
+      }
+      
+      .cumconevu .volupavum .vumkob-salovum{
+        position: absolute;
+        top: -50px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background: #fff;
+      }
+      
+      .cumconevu .volupavum .vumkob-salovum img{
+        width: 100px;
+        height: 100px;
+        padding: 5px;
+      }
+      </style>
+    <table border="0" width="900" cellpadding="0" cellspacing="0" align="center" bgcolor="#fb593a">
+        <tr>
+            <td width="150" align="center"><img style="width:150px" th:src="@{/images/logo2.svg}"></td>
+            <td align="center">
+                <H1>РОСИНКА</H1>
+            </td>
+            <td width="200">
+                <table cellpadding="5" width="100%">
+                    <tr>
+                        <!-- <td width="40%" align="right">�����: </td> -->
+                        <td align="right"><input type="text" value="логин"></td>
+                    </tr>
+                    <tr>
+                        <!-- <td width="40%" align="right">������: </td> -->
+                        <td align="right"><input type="password" value="пароль"></td>
+                    </tr>
+                    <tr>
+                        <!-- 			<td width="40%" align="right"><A HREF="#">�����������</A></td> -->
+                        <td align="right"><input type="submit" value="войти"></td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+
+    <table border="0" width="900" cellpadding="5" align="center">
+        <tr>
+            <td align="center"><a href="/products/index">главная</a></td>
+            <td align="center"><a href="/products/goods">каталог</a></td>
+            <td align="center"><a href="/products/contacts">контакты</a></td>
+
+            <form th:method="POST" th:action="@{/products/search}">
+                <td align="right"><input type="text" id="query" name="query">
+
+                    <button type="submit">поиск</button></td>
+            </form>
+        </tr>
+    </table>
+    <BR>
+    <table border="0" width="900" cellpadding="5" align="center">
+        <tr>
+            <td width="150" height="300"  valign="top" align="center" bgcolor="#f78fa7">
+                <a href="/products/about_us">о нас</a></a><BR><BR>
+                <a href="/products/history">история фирмы</a></a><BR><BR>
+                <a href="/products/employeers">сотрудники</a></a><BR><BR>
+
+            </td>
+            <td>
+                <h1>СОТРУДНИКИ</h1>
+                <p>
+                    <div class="kadupis-decung">
+                        <h1>Наша команда</h1>
+                        <div class="cumconevu">
+                        <div class="volupavum">
+                        <div class="vumkob-salovum">
+                        <img src="http://zornet.ru/_fr/83/5557008.jpg" alt="Ключевые слова">
+                        </div>
+                        <h3>Иванов иван</h3>
+                        <p class="role">Дизайнер</p>
+                        <p>Здесь краткое описание по его делам.</p>
+                        </div>
+                        <div class="volupavum">
+                        <div class="vumkob-salovum">
+                        <img src="http://zornet.ru/_fr/83/9342973.jpg" alt="Ключевые фразы">
+                        </div>
+                        <h3>Жанна д'Арк</h3>
+                        <p class="role">Администратор</p>
+                        <p>Кратко по теме этого админа.</p></div>
+                        <div class="volupavum">
+                        <div class="vumkob-salovum">
+                        <img src="http://zornet.ru/_fr/83/5566978.jpg" alt="Ключевое слово под изображение">
+                        </div>
+                        <h3>Павлик Морозов</h3>
+                        <p class="role">Модератор</p>
+                        <p>Путеводитель по интернет ресурсу.</p>
+                        </div>
+                        </div>
+                      </div>
+                
+            </td>
+
+        </tr>
+
+    </table>
+    <hr>
+    все права защищены
+
+
+</body>
+
+</html>

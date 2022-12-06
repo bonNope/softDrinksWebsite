@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <title>главная</title>
+</head>
+
+<body>
+    <table border="0" width="900" cellpadding="0" cellspacing="0" align="center" bgcolor="#fb593a">
+        <tr>
+            <td width="150" align="center"><img style="width:150px" th:src="@{/images/logo2.svg}"></td>
+            <td align="center">
+                <H1>РОСИНКА</H1>
+            </td>
+            <td width="200">
+                <table cellpadding="5" width="100%">
+                    <tr>
+                        <!-- <td width="40%" align="right">�����: </td> -->
+                        <td align="right"><input type="text" value="логин"></td>
+                    </tr>
+                    <tr>
+                        <!-- <td width="40%" align="right">������: </td> -->
+                        <td align="right"><input type="password" value="пароль"></td>
+                    </tr>
+                    <tr>
+                        <!-- 			<td width="40%" align="right"><A HREF="#">�����������</A></td> -->
+                        <td align="right"><input type="submit" value="войти"></td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+
+    <table border="0" width="900" cellpadding="5"  align="center">
+        <tr>
+            <td align="center"><a href="/products/index">главная</a></td>
+            <td align="center"><a href="/products/goods">каталог</a></td>
+            <td align="center"><a href="/products/contacts">контакты</a></td>
+
+            <form th:method="POST" th:action="@{/products/search}">
+                <td align="right"><input type="text" id="query" name="query">
+
+                    <button type="submit">поиск</button></td>
+            </form>
+        </tr>
+    </table>
+    <BR>
+    <table border="0" width="900" cellpadding="5"  align="center">
+        <tr>
+            <td width="150" height="300"  valign="top" align="center" bgcolor="#f78fa7">
+                <a href="/products/about_us">о нас</a><BR><BR>
+                <a href="/products/history">история фирмы</a><BR><BR>
+                <a href="/products/employeers">сотрудники</a><BR><BR>
+
+            </td>
+            <td>
+                <h1>АО «Компания Росинка»</h1>
+                <p>
+                <div>
+                    <div>
+                        <div>Почтовый адрес:</div>
+                        <p>398032, г. Липецк,<br>Универсальный проезд, д. 11</p>
+                    </div>
+                    <div>
+                        <div class="contact-title">Телефон / факс:</div>
+                        <p><a href="#">+7 (4742) 56-62-10</a><br><a href="#" class="contacts-link">+7 (4742)
+                                56-62-07</a> (факс)</p>
+                    </div>
+                    <div>
+                        <div>Электронная почта:</div>
+                        <p><a href="">root@liprosinka.ru</a></p>
+                    </div>
+                    <div>
+                        <div></div>
+                        <div><a href="https://vk.com/nestearussia"></a><a href="https://ok.ru/nestearussia"></a></div>
+                    </div>
+                </div>
+                <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/9/lipetsk/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Липецк</a><a href="https://yandex.ru/maps/9/lipetsk/house/universalny_proyezd_11/Z0AYcwVnSUEOQFtofXpweXhkZQ==/?from=mapframe&ll=39.529589%2C52.620250&source=mapframe&utm_medium=mapframe&utm_source=maps&z=14" style="color:#eee;font-size:12px;position:absolute;top:14px;">Универсальный проезд, 11 на карте Липецка — Яндекс Карты</a><iframe src="https://yandex.ru/map-widget/v1/-/CCUZU6VRKD" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+
+
+            </td>
+
+        </tr>
+
+    </table>
+    <hr>
+    все права защищены
+
+
+</body>
+
+</html>

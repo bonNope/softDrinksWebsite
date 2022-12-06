@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>главная</title>
+</head>
+
+<body>
+	
+	<table border="0" width="900" cellpadding="0" cellspacing="0" align="center" bgcolor="#fb593a">
+		<tr>
+			<td width="150" align="center"><img style="width:150px" th:src="@{/images/logo2.svg}"></td>
+			<td align="center">
+				<H1>РОСИНКА</H1>
+			</td>
+			<td width="200">
+				<table cellpadding="5" width="100%">
+					<tr>
+						<!-- <td width="40%" align="right">�����: </td> -->
+						<td align="right"><input type="text" value="логин"></td>
+					</tr>
+					<tr>
+						<!-- <td width="40%" align="right">������: </td> -->
+						<td align="right"><input type="password" value="пароль"></td>
+					</tr>
+					<tr>
+						<!-- 			<td width="40%" align="right"><A HREF="#">�����������</A></td> -->
+						<td align="right"><input type="submit" value="войти"></td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+
+	<table border="0" width="900" cellpadding="5" align="center">
+		<tr>
+			<td align="center"><a href="/products/index">главная</a></td>
+			<td align="center"><a href="/products/goods">каталог</a></td>
+			<td align="center"><a href="/products/contacts">контакты</a></td>
+
+			<form th:method="POST" th:action="@{/products/search}">
+				<td align="right"><input type="text" id="query" name="query">
+
+					<button type="submit">поиск</button></td>
+			</form>
+		</tr>
+	</table>
+	<BR>
+	<table border="0" width="900" cellpadding="5" align="center">
+		<tr>
+			<td width="150" height="300"  valign="top" align="center" bgcolor="#f78fa7">
+				<a href="/products/about_us">о нас</a><BR><BR>
+				<a href="/products/history">история фирмы</a><BR><BR>
+				<a href="/products/employeers">сотрудники</a><BR><BR>
+
+			</td>
+			<td>
+				<H1 align="center">О НАС</H1>
+				<p>
+
+				<p>Компания «Липецкая Росинка» (АО «
+					Компания Росинка») по производству и розливу безалкогольных и прохладительных напитков была о
+					снована в 2005 году на базе винодельческого и сокоминерального завода «Росинка», функционирующего с
+					1974 года.</p>
+				<p>С 2006 года было начато глобальное технологическое переоборудование существующего производства,
+					установлено полностью
+					автоматизированное инновационное оборудование для производства и розлива минеральной воды и
+					безалкогольных напитков.</p>
+				<p>АО « Компания Росинка» работает по принципу технологии полного «чистого производства» – он включает в
+					себя как чистоту розлива и производства, так и чистоту самого напитка от химических составляющих,
+					добавок и консервантов. Асептические и ультраклин стерильные линии производства и розлива, позволяют
+					производить безопасные и полезные напитки с сохранением всех свойств растительных ингредиентов и
+					натуральных экстрактов.</p>
+				<p>Все производство построено на использовании только артезианских и минеральных вод. Скважина
+					минеральных вод составляет 601 м и является первой самой глубокой в регионе.</p>
+
+
+
+				<img style="width:550px" th:src="@{/images/for_us.jpg}" alt="">
+
+
+
+
+
+
+
+
+			</td>
+
+		</tr>
+
+	</table>
+	<hr>
+	все права защищены
+
+</body>
+
+</html>
+
