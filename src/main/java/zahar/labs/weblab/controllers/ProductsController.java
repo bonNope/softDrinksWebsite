@@ -1,15 +1,11 @@
 package zahar.labs.weblab.controllers;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.Banner;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 import zahar.labs.weblab.models.Product;
 import zahar.labs.weblab.services.ProductsService;
-
-import javax.validation.Valid;
 
 @Controller
 @RequestMapping("/products")
